@@ -16,7 +16,47 @@
   <body>
     <div class="container">
       <header class="header">
-        <svg><use xlink:href="img/sprites.svg#icon-bookmark" /></svg>
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+
+        <form action="#" class="search">
+          <input
+            type="text"
+            name="search"
+            class="search__input"
+            placeholder="search hotels"
+          />
+
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprites.svg#icon-magnifying-glass" />
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <li class="user-nav__item">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprites.svg#icon-bookmark" />
+            </svg>
+            <span class="user-nav__notification">3</span>
+          </li>
+
+          <li class="user-nav__item">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprites.svg#icon-chat" />
+            </svg>
+            <span class="user-nav__notification">15</span>
+          </li>
+
+          <li class="user-nav__item">
+            <img
+              src="img/user-1.jpg"
+              alt="user photo"
+              class="user-nav__photo"
+            />
+            <span class="user-nav__name">mma</span>
+          </li>
+        </nav>
       </header>
       <div class="content">
         <nav class="sidebar">sidebar</nav>
