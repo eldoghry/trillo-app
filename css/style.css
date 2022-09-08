@@ -32,3 +32,24 @@ body {
   background: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
   background-repeat: no-repeat;
   background-size: cover; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #fff;
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: orangered; }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%; }
+
+.main {
+  background-color: #fff;
+  flex: 1; }
