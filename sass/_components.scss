@@ -76,9 +76,6 @@
     background-color: var(--color-grey-light-4);
   }
 
-  &__item {
-  }
-
   &__icon {
     width: 2.25rem;
     height: 2.25rem;
@@ -86,6 +83,17 @@
   }
 
   &__notification {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.7rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__photo {
@@ -162,6 +170,9 @@
   }
 }
 
+////////////////////////////////////////////////
+///// Legal
+
 .legal {
   padding: 0 2rem;
   margin-bottom: 2rem;
@@ -170,5 +181,90 @@
   text-align: center;
 }
 
-.main {
+////////////////////////////////////////////////
+///// Gallery
+
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+////////////////////////////////////////////////
+///// Overview
+
+.overview {
+  display: flex;
+  align-items: center;
+
+  border-bottom: var(--line);
+
+  &__heading {
+    font-size: 2.35rem;
+    font-weight: 300;
+    padding: 1.25rem 2rem;
+    letter-spacing: 1px;
+  }
+
+  &__stars {
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 1.4rem;
+  }
+
+  &__icon-location {
+    margin-right: 0.5rem;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__rating {
+    color: #fff;
+    background-color: var(--color-primary);
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    padding: 0 2rem;
+
+    &--average {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    &--count {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+////////////////////////////////////////////////
+///// Inline Button
+
+.btn-inline {
+  border: none;
+  outline: none;
+  color: currentColor;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: inherit;
 }

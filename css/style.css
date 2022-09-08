@@ -8,7 +8,8 @@
   --color-grey-light-4: #ccc;
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999; }
+  --color-grey-dark-3: #999;
+  --line: 1px solid var(--color-grey-light-2); }
 
 * {
   margin: 0;
@@ -45,7 +46,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 1.4rem;
-  border-bottom: 1px solid var(--color-grey-light-2); }
+  border-bottom: var(--line); }
 
 .content {
   display: flex; }
@@ -119,6 +120,18 @@ body {
     width: 2.25rem;
     height: 2.25rem;
     fill: currentColor; }
+  .user-nav__notification {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.7rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .user-nav__photo {
     height: 3.75rem;
     border-radius: 50%;
@@ -172,3 +185,59 @@ body {
   color: inherit;
   font-size: 1.2rem;
   text-align: center; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--line); }
+  .overview__heading {
+    font-size: 2.35rem;
+    font-weight: 300;
+    padding: 1.25rem 2rem;
+    letter-spacing: 1px; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex; }
+  .overview__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 1.4rem; }
+  .overview__icon-location {
+    margin-right: 0.5rem; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
+  .overview__rating {
+    color: #fff;
+    background-color: var(--color-primary);
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    padding: 0 2rem; }
+    .overview__rating--average {
+      font-size: 2rem;
+      font-weight: 300; }
+    .overview__rating--count {
+      font-size: 1rem;
+      text-transform: uppercase; }
+
+.btn-inline {
+  border: none;
+  outline: none;
+  color: currentColor;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: inherit; }
