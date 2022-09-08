@@ -34,33 +34,72 @@
         </form>
 
         <nav class="user-nav">
-          <li class="user-nav__item">
+          <div class="user-nav__box">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprites.svg#icon-bookmark" />
             </svg>
             <span class="user-nav__notification">3</span>
-          </li>
+          </div>
 
-          <li class="user-nav__item">
+          <div class="user-nav__box">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprites.svg#icon-chat" />
             </svg>
             <span class="user-nav__notification">15</span>
-          </li>
+          </div>
 
-          <li class="user-nav__item">
+          <div class="user-nav__box">
             <img
               src="img/user-1.jpg"
               alt="user photo"
               class="user-nav__photo"
             />
             <span class="user-nav__name">mma</span>
-          </li>
+          </div>
         </nav>
       </header>
       <div class="content">
-        <nav class="sidebar">sidebar</nav>
-        <main class="main">main</main>
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-home" />
+                </svg>
+                <span>hotel</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-aircraft-take-off" />
+                </svg>
+                <span>flight</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-key" />
+                </svg>
+                <span>car rental</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-map" />
+                </svg>
+                <span>tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">&copy; 2022 by trillo. All rights reserved.</div>
+        </nav>
+        <main class="main"></main>
       </div>
     </div>
   </body>
