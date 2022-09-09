@@ -291,7 +291,7 @@
     box-shadow: none;
   }
   50% {
-    transform: scaleX(1.02);
+    transform: scaleX(1.1);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   }
   100% {
@@ -423,5 +423,79 @@
     font-size: 2rem;
     margin-left: auto;
     color: var(--color-primary);
+  }
+}
+
+////////////////////////////////////////////////
+///// CTA
+
+.cta {
+  border-top: var(--line);
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__book-now {
+    margin-bottom: 1rem;
+  }
+}
+
+////////////////////////////////////////////////
+///// button
+
+.btn {
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+
+  font-size: 1.5rem;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+
+  & > * {
+    transition: all 0.2s;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-visible {
+    padding: 2rem 7.5rem;
+  }
+  &-invisible {
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    top: -100%;
+  }
+
+  &:focus {
+    animation: pulsate 1s infinite;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+  }
+
+  &:hover &-visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &-invisible {
+    top: 0;
   }
 }

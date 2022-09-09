@@ -278,7 +278,7 @@ body {
     transform: scaleX(1);
     box-shadow: none; }
   50% {
-    transform: scaleX(1.02);
+    transform: scaleX(1.1);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
   100% {
     transform: scaleX(1);
@@ -366,3 +366,44 @@ body {
     font-size: 2rem;
     margin-left: auto;
     color: var(--color-primary); }
+
+.cta {
+  border-top: var(--line);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .cta__book-now {
+    margin-bottom: 1rem; }
+
+.btn {
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  cursor: pointer; }
+  .btn > * {
+    transition: all 0.2s;
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+  .btn-visible {
+    padding: 2rem 7.5rem; }
+  .btn-invisible {
+    padding: 2rem 0;
+    position: absolute;
+    left: 0;
+    top: -100%; }
+  .btn:focus {
+    animation: pulsate 1s infinite; }
+  .btn:hover {
+    background: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn:hover .btn-visible {
+    transform: translateY(100%); }
+  .btn:hover .btn-invisible {
+    top: 0; }
